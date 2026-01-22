@@ -14,6 +14,7 @@
         {
             [CartyADSDK sharedInstance].userid = userID;
         }
+        [CartyADSDK sharedInstance].mediation = @"LevelPlay";
         [[CartyADSDK sharedInstance] start:appid completion:^{
             [delegate onInitDidSucceed];
         }];
